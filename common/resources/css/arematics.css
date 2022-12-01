@@ -1,0 +1,277 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-text: black;
+  --color-accent-text: #c3c3c3;
+  --color-background: #ffffff;
+  --color-background-accent: #f1f1f1;
+  --color-blue-accent: #539ad2;
+  --color-blue-background: #0c3fab;
+  --input-background-color: #dcdcdc;
+}
+
+html, body {
+  font-family: "Quicksand", "Open Sans", sans-serif;
+  background-color: var(--color-background);
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text);
+}
+
+.importantText, .link {
+  color: var(--color-blue-accent);
+}
+
+.shadowText {
+  color: var(--color-accent-text);
+}
+
+h1, h2 {
+  font-weight: 500 !important;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+input {
+  outline: none;
+  border: none;
+  color: var(--color-text);
+  background-color: var(--input-background-color);
+  border-radius: 2px;
+}
+
+input:disabled {
+  color: var(--color-accent-text) !important;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  opacity: 0;
+}
+
+.bodyContent {
+  margin-top: 30vh;
+  width: 100%;
+  margin-bottom: 45rem;
+}
+
+.containers, .small-container, .container, .big-container {
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.big-container {
+  max-width: 1660px;
+}
+
+.container {
+  max-width: 1220px;
+}
+
+.small-container {
+  max-width: 800px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.flexColumns {
+  flex-direction: column;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.styledButton {
+  background-color: var(--color-blue-background);
+  color: white;
+  width: 100%;
+  max-width: 250px;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0 !important;
+}
+
+hr {
+  border-color: var(--input-background-color);
+  margin: 0 0 20px 0;
+}
+
+.mat-h1, .mat-headline, .mat-typography h1 {
+  font-size: 1.4rem;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+               supported by Chrome, Edge, Opera and Firefox */
+}
+
+.form-control, option, .select2-container-multi .select2-choices, .select2-drop, .blank-slate-pf, .dropdown-menu{
+  background: var(--color-background-accent);
+  color: var(--color-text);
+  border: none;
+  border-radius: 5px;
+}
+
+.form-control:hover, .form-control:focus{
+  box-shadow: none;
+}
+
+.dropdown-menu>li>a{
+  color: var(--color-text);
+}
+
+option:hover{
+  background-color: var(--color-blue-background);
+}
+
+.btn-primary, .select2-container-multi .select2-choices .select2-search-choice{
+  background-color: var(--color-blue-background);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-image: none;
+}
+
+.btn-default{
+  color: var(--color-text);
+  border: none;
+}
+
+.btn, .btn-primary, .btn-default{
+  min-width: 60px;
+  min-height: 30px;
+  border-radius: 5px;
+}
+
+.nav-tabs>li>a, .nav-tabs>li>a:hover{
+  color: var(--color-accent-text);
+  border: none;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  color: var(--color-blue-accent);
+  background-color: var(--color-background-accent);
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.nav-tabs{
+  border-bottom: 1px solid var(--color-background-accent);
+}
+
+.btn-default.disabled, .btn-default.disabled.active, .btn-default.disabled:active, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled], .btn-default[disabled].active, .btn-default[disabled]:active, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default.active, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover, .btn.disabled, .btn[disabled], fieldset[disabled] .btn{
+  background-color: var(--color-background-accent);
+  border-color: var(--color-accent-text);
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn{
+  background-color:  var(--color-background-accent) !important;
+  border-color: var(--color-accent-text) !important;
+}
+
+.table>thead, .btn-default, .input-group-addon, .table-bordered{
+  background-color: var(--color-background-accent);
+  background-image: none;
+  border: none;
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{
+  background-color: var(--color-background-accent);
+  background-image: none;
+  border: 1px solid rgba(76, 76, 76, 0.51);
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+  background-color: var(--color-background-accent);
+  color: var(--color-accent-text);
+}
+
+.onoffswitch .onoffswitch-label{
+  background-color: var(--color-background-accent) !important;
+  background-image: none !important;
+  border: none !important;
+}
+
+.onoffswitch .onoffswitch-switch{
+  display: none;
+}
+
+.onoffswitch .onoffswitch-inner .onoffswitch-inactive{
+  background: transparent !important;
+  border: none !important;
+  color: var(--color-accent-text) !important;
+  padding-right: 22px !important;
+}
+
+.onoffswitch .onoffswitch-inner .onoffswitch-active{
+  background-color: var(--color-blue-background) !important;
+  background-image: none !important;
+  border: none !important;
+  padding-left: 22px !important;
+}
+
+.input-group-addon{
+  color: var(--color-text);
+}
+
+@media only screen and (max-width: 1100px) {
+  .containers, .small-container, .container, .big-container {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .containers, .small-container, .container, .big-container {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .containers, .small-container, .container, .big-container {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bodyContent {
+    margin-top: 2rem;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #FFFFFF;
+    --color-accent-text: #AFAFAF;
+    --color-background: #0D0C0C;
+    --color-background-accent: #26262E;
+    --input-background-color: #252525;
+  }
+}
+@font-face {
+  font-family: Lemon-Milk;
+  src: url("assets/LEMONMILK-Medium.otf");
+}
+
+/*# sourceMappingURL=arematics-styles.css.map */

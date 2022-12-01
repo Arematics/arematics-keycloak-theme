@@ -1,3 +1,39 @@
-.login-pf body{
+.login-pf, .login-pf body{
     background: var(--color-background);
+}
+
+#kc-header-wrapper{
+    font-family: 'Lemon Milk';
+}
+
+.card-pf{
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+#kc-info-wrapper{
+    background: none;
+}
+
+.pf-c-button.pf-m-primary{
+    background-color: var(--color-blue-background);
+}
+
+a{
+    color: var(--color-blue-accent);
+}
+
+#kc-locale ul, #social-github, .pf-c-form-control, .pf-c-form-control[aria-invalid="true"]{
+    background-color: var(--color-background-accent);
+}
+
+#social-github, #social-github:after{
+    border: none
+}
+
+.pf-c-form-control{
+    border: none;
+    border-radius: 5px;
+    color: var(--color-atext);
 }
